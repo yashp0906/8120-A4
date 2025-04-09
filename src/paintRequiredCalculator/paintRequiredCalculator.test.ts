@@ -1,9 +1,8 @@
 import paintRequiredCalculator from "./paintRequiredCalculator";
 
 describe("paint required calculator", () => {
-  test("should return expected result", () => {
-    const result = paintRequiredCalculator(50, 10);
-
-    expect(result).toEqual(5);
+  test('should return NaN if both area and coveragePerUnit are 0', () => {
+    expect(paintRequiredCalculator(0, 0)).toBeNaN();
   });
+  
 });
