@@ -7,4 +7,7 @@ describe('convertAreaToSquareFeet', () => {
   test('should correctly convert 10 square meters to square feet', () => {
     expect(convertAreaToSquareFeet(10)).toBeCloseTo(107.639, 3);
   });
+  test('should return negative result for negative input (if allowed)', () => {
+    expect(convertAreaToSquareFeet(-3)).toBeCloseTo(-32.2917, 4);
+  });
 });
