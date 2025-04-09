@@ -1,4 +1,4 @@
-export function calculateTotalPaintRequired(
+export default function calculateTotalPaintRequired(
     width: number,
     height: number,
     numberOfCopies: number
