@@ -7,5 +7,8 @@ describe('estimatePaintingTime', () => {
   test('should return fractional time if not evenly divisible', () => {
     expect(estimatePaintingTime(150, 40)).toBeCloseTo(3.75, 2);
   });
+  test('should return positive time if both area and coveragePerHour are negative', () => {
+    expect(estimatePaintingTime(-100, -50)).toBe(2);
+  });
 });
 
