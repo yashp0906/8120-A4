@@ -12,4 +12,7 @@ describe('convertAreaToSquareFeet', () => {
       test('should return correct value for negative width/height', () => {
         expect(calculateTotalPaintRequired(-3, 2, 1)).toBeCloseTo(-7, 2);
       });
+      test('should calculate correct paint for 5000 copies of 3x2 rectangle', () => {
+        expect(calculateTotalPaintRequired(3, 2, 5000)).toBeCloseTo(35000, 2);
+      });
 });
