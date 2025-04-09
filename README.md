@@ -1,61 +1,53 @@
-# SENG8120 Modern Automated Testing 
-
-Version: Alpaca
+# SENG8120 Modern Automated Testing
 
 ## Purpose
 
-This repository houses the code we require for examples and assignments.
+This repository contains a list of TypeScript functions with corresponding automated tests to demonstrate modern testing practices.
 
-## Repository Usage
+### Included Functions
 
-This repository will contain branches of code.
+- **calculateCanvasSize** - Calculates the area of a canvas.
+- **calculateCanvasDiagonal** - Calculates the diagonal of a canvas.
+- **calculatePaintCost** - Calculates the cost of the paint required.
+- **calculateTotalCost** - Calculates the total cost of a painting job.
+- **convertAreaToSquareFeet** - Converts area measurements to square feet.
+- **estimatePaintingTime** - Estimates the time required to paint an area.
+- **paintRequiredCalculator** - Determines the amount of paint needed to cover a given area.
+- **paintRequiredForMultipleCoats** - Calculates paint needed for multiple coats.
+- **calculateTotalPaintRequired** - Calculate total paint required.
 
-Please refer to your instructor's directions on how to use this repository.
+---
+## Getting Started
 
-## Branch Usage
+### Prerequisites
 
-**Installing The Dependencies**
+Ensure you have the following installed on your machine:
 
-You will need to install dependencies by using:
+- Node.js (Version 12 or higher)
+- NPM (Node Package Manager)
 
-```bash
-npm install
-```
+### Installation
 
-**Running The Project**
+To run the project on your local machine, follow these steps:
 
-To run the project, you must first build the project:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yashp0906/8120-A4
 
-```bash
-npm run build
-```
+2. Navigate to the project directory:
+    cd project-directory
 
-followed by:
+3. Install the required dependencies:
+    npm install
 
-```bash
-npm start
-```
+### Running Tests
 
-Note:  if you make a change in the production code, you must `build` & `start`.
-Otherwise, your changes will not be reflected.
-
-**Running The Tests**
-
-To run the tests, you can use
-
-```bash
-npm run test
-```
-
-To keep the tests running, you can use
-
-```bash
-npm run test -- --watch
-```
-
-To run a specific test, you can use
-
-```bash
-npm run test [my test name]
-```
-
+npm test -- calculateCanvasDiagonal/calculateCanvasDiagonal.test.ts
+npm test -- calculateCanvasSize/calculateCanvasSize.test.ts
+npm test -- calculatePaintCost/calculatePaintCost.test.ts
+npm test -- calculateTotalCost/calculateTotalCost.test.ts
+npm test -- convertAreaToSquareFeet/convertAreaToSquareFeet.test.ts
+npm test -- estimatePaintingTime/estimatePaintingTime.test.ts
+npm test -- paintRequiredCalculator/paintRequiredCalculator.test.ts
+npm test -- paintRequiredForMultipleCoats/paintRequiredForMultipleCoats.test.ts
+npm test -- calculateTotalPaintRequired/calculateTotalPaintRequired.test.ts
