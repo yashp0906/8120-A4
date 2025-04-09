@@ -6,5 +6,8 @@ describe('calculatePaintCost', () => {
   });
   test('should calculate correct paint cost for valid inputs', () => {
     expect(calculatePaintCost(100, 2)).toBe(200);
+  });
+  test('should handle fractional area and costPerUnit', () => {
+    expect(calculatePaintCost(12.5, 1.2)).toBeCloseTo(15, 1);
   });  
 });
