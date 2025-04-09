@@ -9,4 +9,7 @@ describe('convertAreaToSquareFeet', () => {
       test('should handle fractional dimensions', () => {
         expect(calculateTotalPaintRequired(2.5, 1.5, 10)).toBeCloseTo(43.75, 2);
       });
+      test('should return correct value for negative width/height', () => {
+        expect(calculateTotalPaintRequired(-3, 2, 1)).toBeCloseTo(-7, 2);
+      });
 });
