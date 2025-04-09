@@ -9,4 +9,9 @@ describe('paintRequiredForMultipleCoats', () => {
   test('should return 0 for coveragePerLiter of 0', () => {
     expect(paintRequiredForMultipleCoats(100, 0, 2)).toBe(Infinity);
   });
+  test('should handle negative values correctly', () => {
+    expect(paintRequiredForMultipleCoats(-100, 10, 2)).toBe(-20);
+    expect(paintRequiredForMultipleCoats(100, -10, 2)).toBe(-20);
+    expect(paintRequiredForMultipleCoats(100, 10, -2)).toBe(-20);
+  });
 });
