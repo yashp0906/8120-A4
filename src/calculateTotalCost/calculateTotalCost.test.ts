@@ -7,4 +7,7 @@ describe('calculateTotalCost', () => {
   test('should return correct total for positive paintCost and laborCost', () => {
     expect(calculateTotalCost(150, 200)).toBe(350);
   });
+  test('should handle fractional values correctly', () => {
+    expect(calculateTotalCost(99.99, 50.55)).toBeCloseTo(150.54, 2);
+  });
 });
